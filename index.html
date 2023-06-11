@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Kalkulatory BARF</h1>
+    </header>
+    <div class="wrapper">
+        <button class="show-help">Pomoc</button>
+        <h4>Kalkulator podaży wapnia</h4>
+        <p>Masa mięsa w gramach:
+            <input type="text" class="weight"><br><span class="error-weight"></span>
+        </p>
+        <p>Dawkowanie węglanu w gramach:
+            <input type="text" class="portion"><br><span class="error-portion"></span>
+        </p>
+        <div class="button-container">
+            <button class="btn">Oblicz</button>
+
+            <p class="result"></p>
+
+            <button class="clear">Wyczyść</button>
+        </div>
+        <div class="modal hidden">
+            <button class="close-modal">&times</button>
+            <h2 class="modal-title">Dlaczego muszę dawkować wapń?</h2>
+            <p class="modal-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellat, placeat
+                eveniet provident
+                recusandae sit quia delectus tenetur inventore in dolorem molestias voluptate. Tenetur, alias.
+                Laudantium rem tempore repudiandae sint.</p>
+        </div>
+        <div class="overlay hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
