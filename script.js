@@ -1,5 +1,5 @@
 "use strict";
-//kalk od wapna
+
 const btn = document.querySelector(".btn");
 const clear = document.querySelector(".clear");
 
@@ -8,12 +8,11 @@ const btnOpenModal = document.querySelector(".show-help");
 const btnCloseModal = document.querySelector(".close-modal");
 const overlay = document.querySelector(".overlay");
 
-
 const result = document.querySelector(".result");
 const errorWeight = document.querySelector(".error-weight");
 const errorPortion = document.querySelector(".error-portion");
 
-//oblicz
+//calc
 btn.addEventListener("click", function () {
   const weight = document.querySelector(".weight").value;
   const portion = document.querySelector(".portion").value;
@@ -28,20 +27,20 @@ btn.addEventListener("click", function () {
     result.textContent = `Dawka węglanu wapnia to ${dawkowanie}g.`;
   }
 });
-//wyczyść
+//clear
 clear.addEventListener("click", function () {
-    const weight = document.querySelector(".weight").value = '';
-    const portion = document.querySelector(".portion").value='';
+  const weight = (document.querySelector(".weight").value = "");
+  const portion = (document.querySelector(".portion").value = "");
   result.textContent = "";
   errorWeight.textContent = "";
   errorPortion.textContent = "";
 });
-//otwieranie
+//opn help
 btnOpenModal.addEventListener("click", function () {
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
 });
-//zamykanie
+//cl help
 btnCloseModal.addEventListener("click", function () {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
